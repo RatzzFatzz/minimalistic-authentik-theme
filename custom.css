@@ -38,31 +38,21 @@ ak-loading-overlay {
 /* Round and apply shadow to cards */
 .pf-c-card {
   border-radius: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
   background-color: var(--card-background) !important;
 }
 
 /* Restrict hover effect to only apply to application list */
 .pf-c-card.pf-m-hoverable:hover {
-  border-radius: 1rem;
   box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5) !important;
 }
 
 .pf-c-expandable-section {
-   border-radius: 0 0 1rem 1rem;
-   box-shadow: 
-       -5px 0 10px -5px rgba(0, 0, 0, 0.5),
-       5px 0 10px -5px rgba(0, 0, 0, 0.5),
-       0 5px 10px -5px rgba(0, 0, 0, 0.5) !important;
-   background-color: var(--card-background) !important;
+  background-color: transparent !important;
 }
 
-.pf-c-expandable-section:hover, .pc-c-card:hover ~ .pf-c-expandable-section {
-  border-radius: 0 0 1rem 1rem;
-  box-shadow: 
-      inset -2px 0 6px -2px rgba(0, 0, 0, 0.5),
-      inset 2px 0 6px -2px rgba(0, 0, 0, 0.5),
-      inset 0 2px 6px -2px rgba(0, 0, 0, 0.5) !important;
+.pf-c-expandable-section::after {
+  opacity: 0;
 }
 
 /* Style remaining cards and their contents */
