@@ -1,0 +1,93 @@
+:root {
+  --page-background: #ffffff;
+  --card-background: #ffffff;
+}
+
+:root[data-theme="dark"] {
+  --page-background: #1e1e1e;
+  --card-background: #1a1a1a;
+}
+
+body, .pf-c-page {
+  background-color: var(--page-background);
+}
+
+/* Change background image to static shade of grey */
+.pf-c-background-image::before {
+    background-image: none !important;
+    background-color: var(--page-background) !important;
+}
+
+/* Style login container */
+.pf-c-login__main {
+    background-color: var(--card-background) !important;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Remove darkening of login container and spinner when loading */
+ak-loading-overlay {
+    opacity: 0;
+}
+
+/* Remove black slant background on service selection */
+.background-default-slant {
+  opacity: 0;
+}
+
+/* Round and apply shadow to cards */
+.pf-c-card {
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  background-color: var(--card-background) !important;
+}
+
+/* Restrict hover effect to only apply to application list */
+.pf-c-card.pf-m-hoverable:hover {
+  border-radius: 1rem;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+}
+
+.pf-c-expandable-section {
+   border-radius: 0 0 1rem 1rem;
+   box-shadow: 
+       -5px 0 10px -5px rgba(0, 0, 0, 0.5),
+       5px 0 10px -5px rgba(0, 0, 0, 0.5),
+       0 5px 10px -5px rgba(0, 0, 0, 0.5) !important;
+   background-color: var(--card-background) !important;
+}
+
+.pf-c-expandable-section:hover, .pc-c-card:hover ~ .pf-c-expandable-section {
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 
+      inset -2px 0 6px -2px rgba(0, 0, 0, 0.5),
+      inset 2px 0 6px -2px rgba(0, 0, 0, 0.5),
+      inset 0 2px 6px -2px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Style remaining cards and their contents */
+ak-recent-events {
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  background-color: var(--card-background) !important;
+}
+
+.pf-c-modal-box, .pf-c-modal-box__header {
+  border-radius: 1rem;
+}
+
+.pf-c-table, .pf-c-toolbar, .pf-c-pagination {
+  background-color: var(--card-background) !important;
+}
+
+.pf-c-toolbar {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.pf-c-pagination {
+  border-radius: 0 0 1rem 1rem;
+}
+
+.pf-c-sidebar__panel, .pf-c-sidebar__content {
+  background-color: transparent !important;
+}
