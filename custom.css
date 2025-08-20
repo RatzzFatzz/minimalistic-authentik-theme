@@ -1,15 +1,15 @@
 :root {
-  --page-background: #ffffff;
-  --card-background: #ffffff;
+    --page-background: #ffffff;
+    --card-background: #ffffff;
 }
 
 :root[data-theme="dark"] {
-  --page-background: #1e1e1e;
-  --card-background: #1a1a1a;
+    --page-background: #1e1e1e;
+    --card-background: #1a1a1a;
 }
 
-body, .pf-c-page {
-  background-color: var(--page-background);
+body, .pf-c-page, .brand, .pf-c-nav, .pf-c-page__main-section, .main-content {
+    background-color: var(--page-background) !important;
 }
 
 /* Change background image to static shade of grey */
@@ -32,52 +32,64 @@ ak-loading-overlay {
 
 /* Remove black slant background on service selection */
 .background-default-slant {
-  opacity: 0;
+    opacity: 0;
 }
 
 /* Round and apply shadow to cards */
 .pf-c-card {
-  border-radius: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
-  background-color: var(--card-background) !important;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+    background-color: var(--card-background) !important;
 }
 
 /* Restrict hover effect to only apply to application list */
 .pf-c-card.pf-m-hoverable:hover {
-  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5) !important;
 }
 
 .pf-c-expandable-section {
-  background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 .pf-c-expandable-section::after {
-  opacity: 0;
+    opacity: 0;
 }
 
 /* Style remaining cards and their contents */
 ak-recent-events {
-  border-radius: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  background-color: var(--card-background) !important;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    background-color: var(--card-background) !important;
 }
 
-.pf-c-modal-box, .pf-c-modal-box__header {
-  border-radius: 1rem;
+.pf-c-modal-box, .pf-c-modal-box__header, .pf-c-modal-box__footer {
+    border-radius: 1rem;
 }
 
-.pf-c-table, .pf-c-toolbar, .pf-c-pagination {
-  background-color: var(--card-background) !important;
+.pf-c-table, .pf-c-toolbar, .pf-c-pagination,
+.pf-c-modal-box__header, .pf-c-modal-box__body, .pf-c-modal-box__footer {
+    background-color: var(--card-background) !important;
 }
 
 .pf-c-toolbar {
-  border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .pf-c-pagination {
-  border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 1rem 1rem;
 }
 
 .pf-c-sidebar__panel, .pf-c-sidebar__content {
-  background-color: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Style search form */
+.pf-c-form-control, .pf-c-input-group > .pf-c-button {
+    background-color: transparent !important;
+}
+
+.pf-c-input-group > .pf-c-button::after {
+    border-left: unset;
+    border-top: unset;
+    border-right: unset;
 }
