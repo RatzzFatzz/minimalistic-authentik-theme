@@ -1,11 +1,17 @@
 :root {
     --page-background: #ffffff;
     --card-background: #ffffff;
+    --input-bg: rgba(0, 0, 0, 0.05);
+    --input-text: #000000;
+    --input-border: rgba(0, 0, 0, 0.2);
 }
 
 :root[data-theme="dark"] {
     --page-background: #1e1e1e;
     --card-background: #1a1a1a;
+    --input-bg: rgba(255, 255, 255, 0.05);
+    --input-text: #ffffff;
+    --input-border: rgba(255, 255, 255, 0.2);
 }
 
 body, .pf-c-page, .brand, .pf-c-nav, .pf-c-page__main-section, .main-content {
@@ -89,7 +95,9 @@ ak-loading-overlay {
 
 /* Style search form */
 .pf-c-form-control, .pf-c-input-group > .pf-c-button {
-    background-color: transparent !important;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border: 1px solid var(--input-border);
 }
 
 .pf-c-input-group > .pf-c-button::after {
