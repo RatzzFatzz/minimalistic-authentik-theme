@@ -97,3 +97,12 @@ div:has(> ak-recent-events) {
     border-top: unset;
     border-right: unset;
 }
+
+/* Style notification drawer */
+.pf-c-drawer__panel {
+    border-radius: 1rem 0 0 1rem;
+}
+
+.pf-c-notification-drawer__header, .pf-c-notification-drawer__body, .pf-c-notification-drawer__list-item {
+    background-color: var(--card-background);
+}
