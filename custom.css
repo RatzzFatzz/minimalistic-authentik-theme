@@ -106,3 +106,12 @@ div:has(> ak-recent-events) {
 .pf-c-notification-drawer__header, .pf-c-notification-drawer__body, .pf-c-notification-drawer__list-item {
     background-color: var(--card-background);
 }
+
+/* Style selected item in navigation drawer */
+.pf-c-nav__link {
+    border-radius: 0 1rem 1rem 0;
+}
+
+.pf-c-nav__link.pf-m-current {
+    background-color: var(--card-background)
+}
