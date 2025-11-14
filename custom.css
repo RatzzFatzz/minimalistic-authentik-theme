@@ -56,7 +56,7 @@ ak-loading-overlay {
 }
 
 /* Style remaining cards and their contents */
-.ak-recent-events {
+div:has(> ak-recent-events) {
     border-radius: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     background-color: var(--card-background) !important;
