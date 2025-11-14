@@ -94,8 +94,8 @@ div:has(> ak-recent-events) {
     padding-bottom: 1rem;
 }
 
-/* Style search form */
-.pf-c-form-control, .pf-c-input-group > .pf-c-button {
+/* Style search form and input fields*/
+.pf-c-form-control, .pf-c-input-group > .pf-c-button, .pf-c-select__toggle, .pf-c-button.pf-m-control {
     background-color: var(--input-bg);
     color: var(--input-text);
     border: 1px solid var(--input-border);
@@ -122,10 +122,26 @@ div:has(> ak-recent-events) {
 }
 
 .pf-c-nav__link.pf-m-current {
-    background-color: var(--card-background)
+    background-color: var(--card-background);
 }
 
 /* Style color when hovering over list items */
 tr.pf-m-hoverable:hover {
-    background-color: var(--page-background)
+    background-color: var(--page-background);
+}
+
+/* Style dropdown toggles */
+.pf-c-dropdown__toggle:hover {
+    border-radius: 0 1rem 0 1rem;
+    background-color: var(--page-background);
+}
+
+.pf-c-dropdown__menu {
+    border-radius: 1rem;
+    background-color: var(--card-background);
+}
+
+.pf-c-dropdown__menu-item:hover {
+    background-color: var(--page-background);
+    border-radius: 1rem;
 }
