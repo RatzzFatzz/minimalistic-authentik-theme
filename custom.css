@@ -67,7 +67,8 @@ div:has(> ak-recent-events) {
 }
 
 .pf-c-table, .pf-c-toolbar, .pf-c-pagination,
-.pf-c-modal-box__header, .pf-c-modal-box__body, .pf-c-modal-box__footer {
+.pf-c-modal-box__header, .pf-c-modal-box__body, .pf-c-modal-box__footer,
+.pf-c-wizard__header, .pf-c-wizard__main, .pf-c-wizard__footer, .pf-c-wizard__nav {
     background-color: var(--card-background) !important;
 }
 
