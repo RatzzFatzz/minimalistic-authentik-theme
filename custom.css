@@ -115,3 +115,8 @@ div:has(> ak-recent-events) {
 .pf-c-nav__link.pf-m-current {
     background-color: var(--card-background)
 }
+
+/* Style color when hovering over list items */
+tr.pf-m-hoverable:hover {
+    background-color: var(--page-background)
+}
