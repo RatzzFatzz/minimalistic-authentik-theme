@@ -1,12 +1,14 @@
 # minimalistic-authentik-theme
 
-## Disclaimer
-The theme should be fully functional for a user. But the admin interface still has inconsistencies.
-
 ## Setup
 1. System > Brands > Edit desired brand (most cases the default one)
 2. Expand Branding settings
 3. Paste the contents of `custom.css` into `Custom CSS`
+
+## Updating
+I haven't found a way to enable auto updates. For now, you have to update it manually.
+
+If someone knows how to make it update automatically, please contact me.
 
 ## Screenshots
 ![login-dark](screenshots/login-dark.png)
