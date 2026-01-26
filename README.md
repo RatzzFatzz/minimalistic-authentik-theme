@@ -1,5 +1,9 @@
 # minimalistic-authentik-theme
 
+> [!CAUTION]
+> authentik 2025.12 introduced a bug breaking the branding for many users. 
+> Check out the progress [here](https://github.com/goauthentik/authentik/issues/19556).
+
 ## Setup
 1. System > Brands > Edit desired brand (most cases the default one)
 2. Expand Branding settings
