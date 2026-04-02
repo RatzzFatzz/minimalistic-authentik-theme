@@ -19,7 +19,7 @@ body, .pf-c-page, .brand, .pf-c-nav, .pf-c-page__main-section, .main-content {
 }
 
 /* Change background image to static shade of grey */
-.pf-c-background-image::before {
+.pf-c-login {
     background-image: none !important;
     background-color: var(--page-background) !important;
 }
