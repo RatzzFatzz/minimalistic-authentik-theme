@@ -126,6 +126,10 @@ div:has(> ak-recent-events) {
     border-radius: 0 1rem 1rem 0;
 }
 
+.pf-c-nav__link:hover {
+    background-color: var(--card-background);
+}
+
 .pf-c-nav__link.pf-m-current {
     background-color: var(--card-background);
 }
