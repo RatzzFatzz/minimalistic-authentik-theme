@@ -116,6 +116,11 @@ div:has(> ak-recent-events) {
     background-color: var(--card-background);
 }
 
+/* Style navigation drawer */
+.pf-c-page__sidebar {
+    box-shadow: none !important;
+}
+
 /* Style selected item in navigation drawer */
 .pf-c-nav__link {
     border-radius: 0 1rem 1rem 0;
